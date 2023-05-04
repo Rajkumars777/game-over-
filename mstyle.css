@@ -1,0 +1,214 @@
+@charset "UTF-8";
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:500&display-swap); 
+body {
+
+position: absolute;
+
+left: 0; top: 0;
+
+width: 100%; height: 100%;
+
+font-family: "Roboto", sans-serif; background-color: #180148;
+
+overflow: hidden;
+}
+.table {
+
+display: table;
+
+width: 100%; height: 100%;
+}
+.table-cell { -moz-transition: all 0.5s; -o-transition: all 0.5s;
+
+display: table-cell; vertical-align: middle;
+
+-webkit-transition: all 0.5s; transition: all 0.55;
+}
+.container {
+
+position: relative; width: 600px;
+
+margin: 30px auto 0;
+
+height: 320px;
+background-color: #999ede; 
+top: 50%;
+-moz-transition: all 0.5s;
+-o-transition: all 0.5s;
+margin-top: -160px;
+}
+.container box { position: absolute;
+
+left: 0;
+
+top: 0;
+
+width: 2005;
+
+height: 100%;
+
+overflow: hidden;
+}
+
+.container .box:before, .container .box:after {
+
+content:"";
+
+position: absolute;
+
+left: 152px;
+
+top: 50px;
+background-color: #9297e0;
+
+transform:rotateX(52deg) rotateY(15deg) rotate(-38deg);
+
+width: 300px;
+
+height: 285px;
+
+-moz-transition: all 0.5%;
+
+-o-transition: all 0.5s;
+-webkit-transition: all 0.5s;
+
+transition: all 0.5s;
+}
+.container box:after { background-color: #a5aae4;
+
+top:-10px; left: 80px;
+
+width: 320px;
+
+height: 180px;
+}
+.container.container-forms {
+
+position: relative;
+}
+.container .btn {
+
+cursor: pointer;
+
+text-align: center;
+
+margin: 0 auto;
+
+width: 60px;
+
+color: #fff;
+
+background-color: #ff7303;
+
+opacity: 1;
+
+-moz-transition: all 0.5s;
+
+-o-transition: all 0.5; -webkit-transition: all 0.5s;
+
+transition: all 0.5;
+}
+.container .btn:hover {
+
+    opacity: 0.7;
+}
+    .container.btn, .container input { padding: 10px 15px;
+    }
+    .container input {
+    
+    margin: 0 auto 15px; display: block;
+    
+    width: 220px;
+    
+    -moz-transition: all 0.3s; -o-transition: all 0.35;
+    
+    -webkit-transition: all 0.39;
+    
+    transition: all 0.35;
+    }
+    .container .container-forms .container-info {
+    
+    text-align: left;
+    
+    font-size:0;
+    }
+    .container .container-forms .container-info .info-item {
+    
+    text-align: center;
+    
+    font-size: 16px; width: 300px;
+    
+    height: 320px; display: inline-block;
+    
+    vertical-align: top;
+    
+    color: #fff; opacity: 1;
+    
+    -moz-transition: all 0.3s; -o-transition: all 0.3s;
+    
+    -webkit-transition: all 0.3s;
+    
+    transition: all 0.35;
+    }
+    .container .container-forms .container-info .info-item p {
+    
+    font-size: 20px;
+    
+    margin: 20px;
+    }
+    .container.active.container-form {
+
+        left: 30px;
+        
+        width: 200px;
+        
+        height: 200px;
+        
+    }
+        .container.active .container-form:before {
+        
+        content:"";
+        
+        position: absolute;
+        
+        left: 51px;
+        
+        top: 5px; color: #5356ad;
+        
+        font-size: 130px;
+        
+        opacity: 1;
+        }        
+        .container .active input, .container.active .btn, .container.active .info-item {
+        
+        display: none;
+        
+        opacity: 0;
+        
+        padding: 8px;
+        
+        margin: 0 auto;
+        
+        height: 0;
+        }
+        .container-active.form-item { height: 100%;
+        }
+        .container.active.container-forms .container-info.info-iten {
+        
+        height: 0;
+        
+        opacity: 0;
+    }
+        .rabbit {
+        
+        width: 50px;
+        
+        height: 50px; position: absolute;
+        
+        bottom: 20px;
+        
+        right: 20px; z-index: 3;
+        
+        fill: #fff;
+        }

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>log in</title>
+    <link href="gamer style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="form-box">
+            <form action="" name="Formfill" onsubmit="return validation()">
+                <h2>Log in</h2>
+                <p id="result"></p>
+                <div class="input-box">
+                    <i class='bx bxs-envelope'></i>
+                    <input type="text" name="email" placeholder="Email">
+                </div>
+                <div class="input-box">
+                    <i class='bx bxs-lock-alt'></i>
+                    <input type="text" name="password" placeholder="Password">
+                </div>
+                <div class="button">
+                    <input type="submit" class="btn" onclick="validation()" value="Log in">
+                </div>
+                <div class="group">
+                    <span><a href="#">Forgot Password</a></span>
+                    <span><a href="#">Sign in</a></span>
+                </div>
+            </form>
+</body>
+</html>

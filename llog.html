@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css log.css">
+ 
+  <!-- jQuery CDN Link -->
+  <title>login</title>
+</head>
+ 
+<body>
+  <div class="container">
+    <div class="form">
+      <div class="btn">
+        
+        <button class="signUpBtn">SIGN UP</button>
+        <button class="loginBtn">LOG IN</button>
+      </div>
+      <form class="signUp" action="" method="get">
+        <div class="formGroup">
+          <input type="text" id="userName" placeholder="User Name" autocomplete="off">
+        </div>
+        <div class="formGroup">
+          <input type="email" placeholder="Email ID" name="email" required autocomplete="off">
+        </div>
+        <div class="formGroup">
+          <input type="password" id="password" placeholder="Password" required autocomplete="off">
+        </div>
+        <div class="formGroup">
+          <input type="password" id="confirmPassword" placeholder="Confirm Password" required autocomplete="off">
+        </div>
+        <div class="checkBox">
+          <input type="checkbox" name="checkbox" id="checkbox">
+          <span class="text">I agree with term & conditions</span>
+        </div>
+        <div class="formGroup">
+          <button type="button" class="btn1">REGISTER</button>
+        </div>
+ 
+      </form>
+        
+      <!------ Login Form -------- -->
+      <form class="login" action="" method="get">
+        
+        <div class="formGroup">
+          <input type="email" placeholder="Email ID" name="email" required autocomplete="off">
+        </div>
+        <div class="formGroup">
+          <input type="password" id="password" placeholder="Password" required autocomplete="off">
+         
+        </div>
+        <div class="formGroup">
+            <a href="" class="ak">Forgot Password</a>
+        </div>
+        <div class="checkBox">
+          <input type="checkbox" name="checkbox" id="checkbox">
+          <span class="text">Keep me signed in on this device</span>
+        </div>
+        <div class="formGroup">
+          <button type="button" class="btn2" onclick="ak()"><a style="color: aliceblue;" href="gamer.html">SIGN IN</a></button>
+        </div>
+ 
+      </form>
+ 
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    /* Show login form on button click */
+    $('.loginBtn').click(function(){
+      $('.login').show();
+      $('.signUp').hide();
+      /* border bottom on button click */
+      $('.loginBtn').css({'border-bottom' : '2px solid #ff4141'});
+      /* remove border after click */
+      $('.signUpBtn').css({'border-style' : 'none'});
+    });
+     
+    /* Show sign Up form on button click */
+    $('.signUpBtn').click(function(){
+      $('.login').hide();
+      $('.signUp').show();
+      /* border bottom on button click */
+      $('.signUpBtn').css({'border-bottom' : '2px solid #ff4141'});
+       /* remove border after click */
+       $('.loginBtn').css({'border-style' : 'none'});
+    });
+    $('.btn1').click(function(){
+      $('.login').show();
+      $('.signUp').hide();
+      /* border bottom on button click */
+      $('.loginBtn').css({'border-bottom' : '2px solid #ff4141'});
+      /* remove border after click */
+      $('.signUpBtn').css({'border-style' : 'none'});
+    });
+    function ak(){
+      window.location.href = "clgpro.html"
+    }
+  </script>
+ 
+  <script src="jQuery.js"></script>
+</body>
+ 
+</html>
